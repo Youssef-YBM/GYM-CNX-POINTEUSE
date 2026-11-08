@@ -1,0 +1,55 @@
+{
+  "name": "gym-cnx-pointeuse",
+  "version": "1.0.0",
+  "description": "Middleware service connecting GYMYA gym management system to Hikvision access control devices",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "keywords": [
+    "gym",
+    "hikvision",
+    "access-control",
+    "raspberry-pi",
+    "middleware",
+    "gymya"
+  ],
+  "author": "GYMYA Team",
+  "license": "MIT",
+  "dependencies": {
+    "@mhoc/axios-digest-auth": "^0.8.0",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "digest-fetch": "^3.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "fast-xml-parser": "^5.3.0",
+    "fs": "^0.0.1-security",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "multer": "^2.0.2",
+    "node-fetch": "^3.3.2",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "winston": "^3.11.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
